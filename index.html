@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dragon Golden Store | Bisutería</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         ENCABEZADO
+    ========================== -->
+
+    <header>
+
+        <div class="logo">
+            DRAGON GOLDEN STORE
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#productos">Productos</a>
+                </li>
+
+                <li>
+                    <a href="#modelo-canvas">Modelo Canvas</a>
+                </li>
+
+                <li>
+                    <a href="#nosotros">Nosotros</a>
+                </li>
+
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+
+                <li>
+                    <a href="#redes-sociales">Redes Sociales</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- CARRITO -->
+
+        <button
+            class="boton-carrito"
+            onclick="abrirCarrito()"
+        >
+
+            🛒
+
+            <span id="contadorCarrito">
+                0
+            </span>
+
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         INICIO
+    ========================== -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <h1></h1>
+
+            <p></p>
+
+            <a
+                href="#productos"
+                class="btn"
+            >
+                VER COLECCIÓN
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRODUCTOS
+    ========================== -->
+
+    <section
+        class="productos"
+        id="productos"
+    >
+
+        <div class="titulo-seccion">
+
+            <h2 class="titulo-animado">
+                Nuestra Colección
+            </h2>
+
+            <p class="subtitulo-destacado">
+                Descubre nuestras exclusivas piezas de bisutería en rodio con alto brillo.
+            </p>
+
+        </div>
+
+
+        <div class="galeria">
+
+
+            <!-- ==================================
+                 PRODUCTO 1
+                 CAMÁNDULA HOMBRE
+            =================================== -->
+
+            <article class="producto">
+
+                <img
+                    src="imagenes2/CAMANDULAS-H.png"
+                    alt="Camándula en Rodio para Hombre"
+                    onclick="abrirProducto(
+                        'Camándula en Rodio - Hombre',
+                        'Camándula en rodio con un diseño elegante y masculino. Ideal para complementar tu estilo y llevar un accesorio sofisticado en cualquier ocasión.',
+                        {
+                            'lisa': { imagen: 'imagenes2/A2_camandula_hombre_lo_fondo_gris.png', precio: 35000 },
+                            'diamantado': { imagen: 'imagenes2/A1_camandula_hombre_do_fondo_gris.png', precio: 42000 }
+                        }
+                    )"
+                >
+
+                <div class="producto-info">
+
+                    <h3 onclick="abrirProducto('Camándula en Rodio - Hombre', 'Camándula en rodio con un diseño elegante y masculino. Ideal para complementar tu estilo y llevar un accesorio sofisticado en cualquier ocasión.', {'lisa': { imagen: 'imagenes2/A2_camandula_hombre_lo_fondo_gris.png', precio: 35000 }, 'diamantado': { imagen: 'imagenes2/A1_camandula_hombre_do_fondo_gris.png', precio: 42000 }})">
+                        Camándula en Rodio
+                    </h3>
+
+                    <p>
+                        Diseño elegante para hombre.
+                    </p>
+
+                    <span class="precio">
+                        $35.000
+                    </span>
+
+                    <div class="producto-cantidad">
+                        <label for="cant-1">Cantidad:</label>
+                        <input type="number" id="cant-1" value="1" min="1">
+                    </div>
+
+                    <button class="btn-whatsapp" style="width:100%; margin-top:5px;" onclick="agregarConCantidad('Camándula en Rodio - Hombre', 'lisa', 'cant-1', {'lisa': { imagen: 'imagenes2/A2_camandula_hombre_lo_fondo_gris.png', precio: 35000 }, 'diamantado': { imagen: 'imagenes2/A1_camandula_hombre_do_fondo_gris.png', precio: 42000 }})">AGREGAR</button>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==================================
+                 PRODUCTO 2
+                 CAMÁNDULA MUJER
+            =================================== -->
+
+            <article class="producto">
+
+                <img
+                    src="imagenes2/CAMANDULAS-M.png"
+                    alt="Camándula en Rodio para Mujer"
+                    onclick="abrirProducto(
+                        'Camándula en Rodio - Mujer',
+                        'Camándula en rodio con un diseño delicado y elegante. Una pieza ideal para complementar tu estilo y darle un toque sofisticado a cualquier ocasión.',
+                        {
+                            'lisa V1': { imagen: 'imagenes2/A1_camandula_mujer_lo_fondo_gris.png', precio: 30000 },
+                            'lisa V2': { imagen: 'imagenes2/A2_camandula_mujer_lo_fondo_gris.png', precio: 30000 }
+                        }
+                    )"
+                >
+
+                <div class="producto-info">
+
+                    <h3 onclick="abrirProducto('Camándula en Rodio - Mujer', 'Camándula en rodio con un diseño delicado y elegante. Una pieza ideal para complementar tu estilo y darle un toque sofisticado a cualquier ocasión.', {'lisa V1': { imagen: 'imagenes2/A1_camandula_mujer_lo_fondo_gris.png', precio: 30000 }, 'lisa V2': { imagen: 'imagenes2/A2_camandula_mujer_lo_fondo_gris.png', precio: 30000 }})">
+                        Camándula en Rodio
+                    </h3>
+
+                    <p>
+                        Diseño elegante para mujer.
+                    </p>
+
+                    <span class="precio">
+                        $30.000
+                    </span>
+
+                    <div class="producto-cantidad">
+                        <label for="cant-2">Cantidad:</label>
+                        <input type="number" id="cant-2" value="1" min="1">
+                    </div>
+
+                    <button class="btn-whatsapp" style="width:100%; margin-top:5px;" onclick="agregarConCantidad('Camándula en Rodio - Mujer', 'lisa V1', 'cant-2', {'lisa V1': { imagen: 'imagenes2/A1_camandula_mujer_lo_fondo_gris.png', precio: 30000 }, 'lisa V2': { imagen: 'imagenes2/A2_camandula_mujer_lo_fondo_gris.png', precio: 30000 }})">AGREGAR</button>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==================================
+                 PRODUCTO 3
+                 COLLAR CON ARETES
+            =================================== -->
+
+            <article class="producto">
+
+                <img
+                    src="imagenes2/CONJUNTOS.png"
+                    alt="Collar con Aretes"
+                    onclick="abrirProducto(
+                        'Collar con Aretes',
+                        'Elegante conjunto de collar y aretes en rodio, diseñado para combinar fácilmente con diferentes estilos y ocasiones.',
+                        {
+                            '1 virgen P': { imagen: 'imagenes2/A2_conjunto_virgen_plata_fondo_gris.png', precio: 35000 },
+                            '2 virgen O': { imagen: 'imagenes2/A3_conjunto_virgen_oro_fondo_gris.png', precio: 35000 },
+                            '3 virgen S': { imagen: 'imagenes2/A1_conjunto_virgen_salmon_fondo_gris.png', precio: 35000 },
+                            '4 arbol S': { imagen: 'imagenes2/A4_conjunto_arbolv_salmon_fondo_gris.png', precio: 35000 },
+                            '5 arbol O': { imagen: 'imagenes2/A6_conjunto_arbolv_oro_fondo_gris.png', precio: 35000 },
+                            '6 perla O': { imagen: 'imagenes2/A5_conjunto_gemaB_oro_fondo_gris.png', precio: 35000 }
+                        }
+                    )"
+                >
+
+                <div class="producto-info">
+
+                    <h3 onclick="abrirProducto('Collar con Aretes', 'Elegante conjunto de collar y aretes en rodio, diseñado para combinar fácilmente con diferentes estilos y ocasiones.', {'1 virgen P': { imagen: 'imagenes2/A2_conjunto_virgen_plata_fondo_gris.png', precio: 35000 }, '2 virgen O': { imagen: 'imagenes2/A3_conjunto_virgen_oro_fondo_gris.png', precio: 35000 }, '3 virgen S': { imagen: 'imagenes2/A1_conjunto_virgen_salmon_fondo_gris.png', precio: 35000 }, '4 arbol S': { imagen: 'imagenes2/A4_conjunto_arbolv_salmon_fondo_gris.png', precio: 35000 }, '5 arbol O': { imagen: 'imagenes2/A6_conjunto_arbolv_oro_fondo_gris.png', precio: 35000 }, '6 perla O': { imagen: 'imagenes2/A5_conjunto_gemaB_oro_fondo_gris.png', precio: 35000 }})">
+                        Collar con Aretes
+                    </h3>
+
+                    <p>
+                        Conjunto elegante en rodio.
+                    </p>
+
+                    <span class="precio">
+                        $35.000
+                    </span>
+
+                    <div class="producto-cantidad">
+                        <label for="cant-3">Cantidad:</label>
+                        <input type="number" id="cant-3" value="1" min="1">
+                    </div>
+
+                    <button class="btn-whatsapp" style="width:100%; margin-top:5px;" onclick="agregarConCantidad('Collar con Aretes', '1 virgen P', 'cant-3', {'1 virgen P': { imagen: 'imagenes2/A2_conjunto_virgen_plata_fondo_gris.png', precio: 35000 }, '2 virgen O': { imagen: 'imagenes2/A3_conjunto_virgen_oro_fondo_gris.png', precio: 35000 }, '3 virgen S': { imagen: 'imagenes2/A1_conjunto_virgen_salmon_fondo_gris.png', precio: 35000 }, '4 arbol S': { imagen: 'imagenes2/A4_conjunto_arbolv_salmon_fondo_gris.png', precio: 35000 }, '5 arbol O': { imagen: 'imagenes2/A6_conjunto_arbolv_oro_fondo_gris.png', precio: 35000 }, '6 perla O': { imagen: 'imagenes2/A5_conjunto_gemaB_oro_fondo_gris.png', precio: 35000 }})">AGREGAR</button>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==================================
+                 PRODUCTO 4
+                 CADENAS
+            =================================== -->
+
+            <article class="producto">
+
+                <img
+                    src="imagenes2/CADENAS.png"
+                    alt="Cadenas"
+                    onclick="abrirProducto(
+                        'Cadenas',
+                        'Colección de cadenas con un diseño moderno y sofisticado. Perfecto para complementar tu estilo en diferentes ocasiones.',
+                        {
+                            '1 valenti V1': { imagen: 'imagenes2/A2_cadena_pequena_oro_fondo_gris.png', precio: 30000 },
+                            '2 valenti V2': { imagen: 'imagenes2/A1-cadena_pequena_oro_fondo_gris.png', precio: 30000 },
+                            '3 cubana V1': { imagen: 'imagenes2/A3_cadena_grande_do_fondo_gris.png', precio: 30000 },
+                            '4 cubana V2': { imagen: 'imagenes2/A4_cadena_grande_do_fondo_gris.png', precio: 30000 }
+                        }
+                    )"
+                >
+
+                <div class="producto-info">
+
+                    <h3 onclick="abrirProducto('Cadenas', 'Colección de cadenas con un diseño moderno y sofisticado. Perfecto para complementar tu estilo en diferentes ocasiones.', {'1 valenti V1': { imagen: 'imagenes2/A2_cadena_pequena_oro_fondo_gris.png', precio: 30000 }, '2 valenti V2': { imagen: 'imagenes2/A1-cadena_pequena_oro_fondo_gris.png', precio: 30000 }, '3 cubana V1': { imagen: 'imagenes2/A3_cadena_grande_do_fondo_gris.png', precio: 30000 }, '4 cubana V2': { imagen: 'imagenes2/A4_cadena_grande_do_fondo_gris.png', precio: 30000 }})">
+                        Cadenas
+                    </h3>
+
+                    <p>
+                        Diseño moderno y sofisticado.
+                    </p>
+
+                    <span class="precio">
+                        $30.000
+                    </span>
+
+                    <div class="producto-cantidad">
+                        <label for="cant-4">Cantidad:</label>
+                        <input type="number" id="cant-4" value="1" min="1">
+                    </div>
+
+                    <button class="btn-whatsapp" style="width:100%; margin-top:5px;" onclick="agregarConCantidad('Cadenas', '1 valenti V1', 'cant-4', {'1 valenti V1': { imagen: 'imagenes2/A2_cadena_pequena_oro_fondo_gris.png', precio: 30000 }, '2 valenti V2': { imagen: 'imagenes2/A1-cadena_pequena_oro_fondo_gris.png', precio: 30000 }, '3 cubana V1': { imagen: 'imagenes2/A3_cadena_grande_do_fondo_gris.png', precio: 30000 }, '4 cubana V2': { imagen: 'imagenes2/A4_cadena_grande_do_fondo_gris.png', precio: 30000 }})">AGREGAR</button>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==================================
+                 PRODUCTO 5
+                 MANILLA
+            =================================== -->
+
+            <article class="producto">
+
+                <img
+                    src="imagenes/manillas-hombre.jpeg"
+                    alt="Manilla Tejida en Rodio"
+                    onclick="abrirProducto(
+                        'Manilla Tejida en Rodio',
+                        'Manilla tejida con balines en rodio, diseñada para complementar un estilo moderno y elegante.',
+                        {
+                            '1 modelo V1': { imagen: 'imagenes/manilla-hombre-plata.jpg', precio: 20000 },
+                            '2 modelo v2': { imagen: 'imagenes/manilla-hombre-oro.jpg', precio: 20000 },
+                            '3 modelo V3': { imagen: 'imagenes/manilla-hombre-salmon.jpg', precio: 20000 }
+                        }
+                    )"
+                >
+
+                <div class="producto-info">
+
+                    <h3 onclick="abrirProducto('Manilla Tejida en Rodio', 'Manilla tejida con balines en rodio, diseñada para complementar un estilo moderno y elegante.', {'1 modelo V1': { imagen: 'imagenes/manilla-hombre-plata.jpg', precio: 20000 }, '2 modelo v2': { imagen: 'imagenes/manilla-hombre-oro.jpg', precio: 20000 }, '3 modelo V3': { imagen: 'imagenes/manilla-hombre-salmon.jpg', precio: 20000 }})">
+                        Manilla Tejida en Rodio
+                    </h3>
+
+                    <p>
+                        Diseño moderno y elegante.
+                    </p>
+
+                    <span class="precio">
+                        $20.000
+                    </span>
+
+                    <div class="producto-cantidad">
+                        <label for="cant-5">Cantidad:</label>
+                        <input type="number" id="cant-5" value="1" min="1">
+                    </div>
+
+                    <button class="btn-whatsapp" style="width:100%; margin-top:5px;" onclick="agregarConCantidad('Manilla Tejida en Rodio', '1 modelo V1', 'cant-5', {'1 modelo V1': { imagen: 'imagenes/manilla-hombre-plata.jpg', precio: 20000 }, '2 modelo v2': { imagen: 'imagenes/manilla-hombre-oro.jpg', precio: 20000 }, '3 modelo V3': { imagen: 'imagenes/manilla-hombre-salmon.jpg', precio: 20000 }})">AGREGAR</button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MODELO CANVAS DINÁMICO
+    ========================== -->
+
+    <section
+        class="modelo-canvas"
+        id="modelo-canvas"
+    >
+
+        <div class="titulo-seccion canvas-titulo">
+
+            <h2 class="titulo-animado">
+                Modelo Canvas
+            </h2>
+
+            <p class="subtitulo-destacado">
+                Estrategia e infraestructura de nuestro modelo de negocio.
+            </p>
+
+        </div>
+
+
+        <div class="canvas-grid-moderno">
+
+            <div class="canvas-card">
+                <div class="canvas-icono-head">🤝</div>
+                <h3>Socios clave</h3>
+                <p>Proveedores de bisutería en rodio, proveedores de empaques, servicios de domicilios y aliados para publicidad y promoción.</p>
+            </div>
+
+            <div class="canvas-card">
+                <div class="canvas-icono-head">⚙️</div>
+                <h3>Actividades clave</h3>
+                <p>Compra y selección de bisutería, gestión de la tienda online, publicidad en redes sociales, recepción y preparación de pedidos, empaque, entrega y atención al cliente.</p>
+            </div>
+
+            <div class="canvas-card">
+                <div class="canvas-icono-head">💎</div>
+                <h3>Recursos clave</h3>
+                <p>Inventario de bisutería en rodio, página web, redes sociales, empaques, celular, internet, capital de trabajo y medios de pago.</p>
+            </div>
+
+            <div class="canvas-card destacado">
+                <div class="canvas-icono-head">⭐</div>
+                <h3>Propuesta de valor</h3>
+                <p>Ofrecer bisutería en rodio moderna, elegante y accesible, con variedad de diseños y una experiencia de compra fácil y segura mediante nuestra tienda online.</p>
+            </div>
+
+            <div class="canvas-card">
+                <div class="canvas-icono-head">🚚</div>
+                <h3>Canales</h3>
+                <p>Entrega a domicilio, servicio de mensajería y entrega directa al cliente.</p>
+            </div>
+
+            <div class="canvas-card">
+                <div class="canvas-icono-head">💬</div>
+                <h3>Relación con clientes</h3>
+                <p>Atención personalizada y rápida, asesoría por redes sociales y WhatsApp, seguimiento de pedidos, promociones, descuentos y atención posventa.</p>
+            </div>
+
+            <div class="canvas-card">
+                <div class="canvas-icono-head">👥</div>
+                <h3>Segmento de clientes</h3>
+                <p>Jóvenes y adultos que buscan accesorios modernos, elegantes y económicos, además de personas que desean comprar accesorios para regalar.</p>
+            </div>
+
+            <div class="canvas-card">
+                <div class="canvas-icono-head">📊</div>
+                <h3>Estructura de costos</h3>
+                <p>Compra de inventario, empaques, página web y dominio, publicidad, transporte, domicilios, comisiones de medios de pago y otros gastos operativos.</p>
+            </div>
+
+            <div class="canvas-card destacado">
+                <div class="canvas-icono-head">💰</div>
+                <h3>Fuentes de ingresos</h3>
+                <p>Venta de bisutería en rodio, venta de accesorios, combos, promociones y cobro de domicilios cuando corresponda.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SOBRE NOSOTROS
+    ========================== -->
+
+    <section
+        class="nosotros"
+        id="nosotros"
+    >
+
+        <div class="nosotros-imagen">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfRe4ZCgeDxHZZx-LbKA9Pg4rVEy7iVzz1zgL5qslBWbUi233X_fR3zvPu&s=10"
+                alt="Bisutería Dragon Golden Store"
+            >
+
+        </div>
+
+
+        <div class="nosotros-texto">
+
+            <h2 class="titulo-animado">
+                Elegancia que perdura
+            </h2>
+
+            <p>
+                <strong>Nuestra Identidad:</strong> En Dragon Golden Store transformamos la pasión por la alta joyería en piezas accesibles. Creemos firmemente que cada accesorio refleja la personalidad y sofisticación de quien lo lleva puesto.
+            </p>
+
+            <p>
+                <strong>Cómo Inició el Proyecto:</strong> La marca nació del esfuerzo conjunto por crear un espacio exclusivo de venta de bisutería fina, enfocándonos en ofrecer un estilo vanguardista y un servicio de atención impecable desde el primer contacto.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BENEFICIOS
+    ========================== -->
+
+    <section class="beneficios">
+
+        <div class="titulo-seccion">
+
+            <h2 class="titulo-animado">
+                ¿Por qué elegirnos?
+            </h2>
+
+            <p class="subtitulo-destacado">
+                Calidad, elegancia y estilo, lo que necesitas.
+            </p>
+
+        </div>
+
+
+        <div class="beneficios-contenedor">
+
+
+            <div class="beneficio">
+
+                <div class="icono">
+                    ✦
+                </div>
+
+                <h3>
+                    Diseños únicos
+                </h3>
+
+                <p>
+                    Piezas cuidadosamente seleccionadas para destacar tu estilo y tu personalidad.
+                </p>
+
+            </div>
+
+
+            <div class="beneficio">
+
+                <div class="icono">
+                    ◇
+                </div>
+
+                <h3>
+                    Acabado en rodio
+                </h3>
+
+                <p>
+                    Diseños con una apariencia elegante, moderna y sofisticada.
+                </p>
+
+            </div>
+
+
+            <div class="beneficio">
+
+                <div class="icono">
+                    ♡
+                </div>
+
+                <h3>
+                    Elegancia
+                </h3>
+
+                <p>
+                    Accesorios pensados para acompañarte en cualquier ocasión.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+
+    <section
+        class="contacto"
+        id="contacto"
+    >
+
+        <h2 class="titulo-animado">
+            Encuentra tu próxima joya
+        </h2>
+
+
+        <p class="subtitulo-destacado">
+            ¿Te gustó alguna de nuestras piezas? Contáctanos para conocer nuestra colección y realizar tu pedido.
+        </p>
+
+
+        <!-- CONTACTOS WHATSAPP -->
+
+        <div class="contactos-whatsapp">
+
+
+            <!-- NICOLÁS -->
+
+            <div class="contacto-persona card-nicolas">
+
+                <img src="imagenes2/fotoN.jpeg" alt="Nicolás" class="contacto-avatar">
+
+                <h3>
+                    Nicolás Sánchez Peñaloza
+                </h3>
+
+                <p>
+                    WhatsApp: 317 598 7676
+                </p>
+
+                <a
+                    href="https://wa.me/573175987676?text=Hola%20Nicolas,%20quiero%20recibir%20atención%20sobre%20los%20productos."
+                    target="_blank"
+                    class="btn-whatsapp"
+                >
+                    CONTACTAR POR WHATSAPP
+                </a>
+
+            </div>
+
+
+            <!-- WILMER -->
+
+            <div class="contacto-persona card-wilmer">
+
+                <img src="imagenes2/fotoW.jpeg" alt="Wilmer" class="contacto-avatar">
+
+                <h3>
+                    Wilmer Garzón Villarraga
+                </h3>
+
+                <p>
+                    WhatsApp: 304 538 5612
+                </p>
+
+                <a
+                    href="https://wa.me/573045385612?text=Hola%20Wilmer,%20quiero%20recibir%20atención%20sobre%20los%20productos."
+                    target="_blank"
+                    class="btn-whatsapp"
+                >
+                    CONTACTAR POR WHATSAPP
+                </a>
+
+            </div>
+
+
+            <!-- AXEL -->
+
+            <div class="contacto-persona card-axel">
+
+                <img src="imagenes2/fotoA.jpeg" alt="Axel" class="contacto-avatar">
+
+                <h3>
+                    Axel Nocua Acosta
+                </h3>
+
+                <p>
+                    WhatsApp: 320 354 1584
+                </p>
+
+                <a
+                    href="https://wa.me/573203541584?text=Hola%20Axel,%20quiero%20recibir%20atención%20sobre%20los%20productos."
+                    target="_blank"
+                    class="btn-whatsapp"
+                >
+                    CONTACTAR POR WHATSAPP
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         REDES SOCIALES
+    ========================== -->
+
+    <section
+        class="redes-sociales"
+        id="redes-sociales"
+    >
+
+        <h2 class="titulo-animado">
+            Síguenos en Redes Sociales
+        </h2>
+
+        <p class="subtitulo-destacado">
+            Conoce nuestras novedades, ofertas exclusivas y lanzamientos en nuestras plataformas oficiales.
+        </p>
+
+        <div class="contactos-redes">
+
+            <!-- INSTAGRAM -->
+            <div class="red-card instagram" id="card-instagram">
+
+                <div class="red-icono">
+                    <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </div>
+
+                <h3>
+                    Instagram
+                </h3>
+
+                <p>
+                    @dragon.golden.store
+                </p>
+
+                <a
+                    href="https://www.instagram.com/dragon.golden.store/"
+                    target="_blank"
+                    class="btn-red btn-instagram"
+                >
+                    SEGUIR EN INSTAGRAM
+                </a>
+
+            </div>
+
+           <!-- FACEBOOK -->
+<div class="red-card facebook" id="card-facebook">
+
+    <div class="red-icono">
+        <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+        </svg>
+    </div>
+
+    <h3>
+        Facebook
+    </h3>
+
+    <p>
+        Dragon Golden Store
+    </p>
+
+    <a
+        href="https://www.facebook.com/share/18uv9oy6Rs/"
+        target="_blank"
+        class="btn-red btn-facebook"
+    >
+        VISITAR EN FACEBOOK
+    </a>
+
+</div>
+
+            <!-- TIKTOK -->
+            <div class="red-card tiktok" id="card-tiktok">
+
+                <div class="red-icono">
+                    <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.82.57-1.31 1.56-1.31 2.56.02 1.01.6 1.96 1.48 2.44 1.02.56 2.33.52 3.29-.13.88-.58 1.41-1.58 1.41-2.63.03-5.26.01-10.53.02-15.79z"/>
+                    </svg>
+                </div>
+
+                <h3>
+                    TikTok
+                </h3>
+
+                <p>
+                    @dragon.golden.store
+                </p>
+
+                <a
+                    href="https://www.tiktok.com/@dragon.golden.store"
+                    target="_blank"
+                    class="btn-red btn-tiktok"
+                >
+                    VER EN TIKTOK
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+    ========================== -->
+
+    <footer>
+
+        <div class="redes">
+
+            <a href="#redes-sociales" onclick="resaltarRed('instagram')">
+                Instagram
+            </a>
+
+            <a href="#redes-sociales" onclick="resaltarRed('facebook')">
+                Facebook
+            </a>
+
+            <a href="#redes-sociales" onclick="resaltarRed('tiktok')">
+                TikTok
+            </a>
+
+        </div>
+
+
+        <p>
+            2026 Dragon Golden Store
+        </p>
+
+
+        <p>
+            Bisutería en Rodio
+        </p>
+
+    </footer>
+
+
+    <!-- =================================================
+         VENTANA DE PRODUCTO (MODAL)
+    ================================================== -->
+
+    <div
+        class="modal-producto"
+        id="modalProducto"
+    >
+
+        <div class="modal-contenido">
+
+
+            <button
+                class="cerrar-modal"
+                onclick="cerrarProducto()"
+            >
+                ×
+            </button>
+
+
+            <div class="modal-imagen">
+
+                <img
+                    id="modalImagen"
+                    src=""
+                    alt="Producto"
+                >
+
+            </div>
+
+
+            <div class="modal-info">
+
+                <span class="modal-categoria">
+                    BISUTERÍA EN RODIO
+                </span>
+
+
+                <h2 id="modalNombre">
+                    Producto
+                </h2>
+
+
+                <p id="modalDescripcion">
+                    Descripción del producto.
+                </p>
+
+
+                <div
+                    class="modal-precio"
+                    id="modalPrecio"
+                >
+                    \$0
+                </div>
+
+
+                <div class="modal-separador"></div>
+
+
+                <h3>
+                    Opciones disponibles
+                </h3>
+
+
+                <div class="modal-colores" id="contenedorOpcionesModal">
+                    <!-- Las opciones dinámicas se generan desde JavaScript -->
+                </div>
+
+
+                <p class="color-elegido">
+
+                    Opción seleccionada:
+
+                    <strong id="colorElegido">
+                        -
+                    </strong>
+
+                </p>
+
+                <!-- Selector de cantidad dentro de la ventana modal -->
+                <div class="modal-cantidad">
+                    <label for="modalInputCantidad">Cantidad:</label>
+                    <input type="number" id="modalInputCantidad" value="1" min="1">
+                </div>
+
+
+                <button
+                    class="btn-agregar-carrito"
+                    onclick="agregarAlCarrito()"
+                >
+
+                    🛒 AGREGAR AL CARRITO
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         CARRITO LATERAL
+    ================================================== -->
+
+    <div
+        class="carrito-panel"
+        id="carritoPanel"
+    >
+
+
+        <div class="carrito-header">
+
+            <div>
+
+                <h2>
+                    Tu carrito
+                </h2>
+
+                <span id="cantidadCarritoTexto">
+                    0 productos
+                </span>
+
+            </div>
+
+
+            <button
+                class="cerrar-carrito"
+                onclick="cerrarCarrito()"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            class="carrito-productos"
+            id="carritoProductos"
+        >
+
+        </div>
+
+
+        <div class="carrito-resumen">
+
+
+            <div class="resumen-linea">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong id="subtotalCarrito">
+                    \$0
+                </strong>
+
+            </div>
+
+
+            <div class="resumen-linea">
+
+                <span>
+                    Envío
+                </span>
+
+                <strong id="envioCarrito">
+                    \$0
+                </strong>
+
+            </div>
+
+
+            <div class="resumen-separador"></div>
+
+
+            <div class="resumen-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="totalCarrito">
+                    \$0
+                </strong>
+
+            </div>
+
+
+            <button
+                class="btn-finalizar"
+                onclick="finalizarCompra()"
+            >
+                FINALIZAR COMPRA
+            </button>
+
+
+            <button
+                class="btn-vaciar"
+                onclick="vaciarCarrito()"
+            >
+                Vaciar carrito
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- FONDO DEL CARRITO -->
+
+    <div
+        class="carrito-overlay"
+        id="carritoOverlay"
+        onclick="cerrarCarrito()"
+    >
+    </div>
+
+
+    <!-- =================================================
+         JAVASCRIPT
+    ================================================== -->
+
+    <script>
+
+        /* =========================================
+           VARIABLES
+        ========================================= */
+
+        let imagenesProductoActual = null;
+
+        let productoActual = null;
+
+        let colorActual = "";
+
+        let carrito = [];
+
+
+        /* =========================================
+           ABRIR PRODUCTO
+        ========================================= */
+
+        function abrirProducto(
+            nombre,
+            descripcion,
+            opciones
+        ) {
+
+            imagenesProductoActual = opciones;
+
+            let llavesColores = Object.keys(opciones);
+            colorActual = llavesColores[0];
+
+            let primerItem = opciones[colorActual];
+            let primerPrecio = (typeof primerItem === 'object') ? primerItem.precio : 35000;
+            let primeraImagen = (typeof primerItem === 'object') ? primerItem.imagen : primerItem;
+
+            productoActual = {
+
+                nombre: nombre,
+
+                descripcion: descripcion,
+
+                precio: primerPrecio,
+
+                imagenes: opciones
+
+            };
+
+
+            document
+                .getElementById("modalNombre")
+                .textContent = nombre;
+
+
+            document
+                .getElementById("modalDescripcion")
+                .textContent = descripcion;
+
+
+            document
+                .getElementById("modalPrecio")
+                .textContent =
+                formatearPrecio(primerPrecio);
+
+
+            document
+                .getElementById("modalImagen")
+                .src =
+                primeraImagen;
+
+
+            document
+                .getElementById("colorElegido")
+                .textContent =
+                colorActual;
+
+            document.getElementById("modalInputCantidad").value = 1;
+
+
+            let contenedor = document.getElementById("contenedorOpcionesModal");
+            contenedor.innerHTML = "";
+
+            llavesColores.forEach(function(opcionKey, index) {
+                let btn = document.createElement("button");
+                btn.type = "button";
+                btn.className = "color-opcion" + (index === 0 ? " seleccionado" : "");
+                
+                let claseCirculo = "plata";
+                let keyLower = opcionKey.toLowerCase();
+                if (keyLower.includes("oro") || keyLower.includes("diamantado") || keyLower.includes("v2")) {
+                    claseCirculo = "oro";
+                } else if (keyLower.includes("salmon") || keyLower.includes("salmón") || keyLower.includes("v3")) {
+                    claseCirculo = "salmon";
+                }
+
+                btn.innerHTML = `<span class="color-circulo ${claseCirculo}"></span> ${opcionKey}`;
+                btn.onclick = function() {
+                    seleccionarColor(opcionKey, this);
+                };
+                contenedor.appendChild(btn);
+            });
+
+
+            document
+                .getElementById("modalProducto")
+                .classList.add(
+                    "activo"
+                );
+
+
+            document.body.style.overflow =
+                "hidden";
+
+        }
+
+
+        /* =========================================
+           SELECCIONAR COLOR
+        ========================================= */
+
+        function seleccionarColor(
+            color,
+            boton
+        ) {
+
+            colorActual = color;
+
+
+            document
+                .querySelectorAll(".color-opcion")
+                .forEach(function(elemento) {
+
+                    elemento.classList.remove(
+                        "seleccionado"
+                    );
+
+                });
+
+
+            boton.classList.add(
+                "seleccionado"
+            );
+
+
+            document
+                .getElementById("colorElegido")
+                .textContent =
+                color;
+
+
+            if (imagenesProductoActual && imagenesProductoActual[color]) {
+
+                let itemSeleccionado = imagenesProductoActual[color];
+                let imagenUrl = (typeof itemSeleccionado === 'object') ? itemSeleccionado.imagen : itemSeleccionado;
+                let precioActualizado = (typeof itemSeleccionado === 'object') ? itemSeleccionado.precio : productoActual.precio;
+
+                document
+                    .getElementById("modalImagen")
+                    .src =
+                    imagenUrl;
+
+                document
+                    .getElementById("modalPrecio")
+                    .textContent =
+                    formatearPrecio(precioActualizado);
+
+                productoActual.precio = precioActualizado;
+
+            }
+
+        }
+
+
+        /* =========================================
+           AGREGAR AL CARRITO DESDE LA VENTANA MODAL
+        ========================================= */
+
+        function agregarAlCarrito() {
+
+            if (!productoActual) {
+
+                return;
+
+            }
+
+            let cantidadSeleccionada = parseInt(document.getElementById("modalInputCantidad").value) || 1;
+
+
+            let productoExistente =
+                carrito.find(function(item) {
+
+                    return (
+                        item.nombre ===
+                        productoActual.nombre
+                        &&
+                        item.color ===
+                        colorActual
+                    );
+
+                });
+
+
+            if (productoExistente) {
+
+                productoExistente.cantidad += cantidadSeleccionada;
+
+            }
+
+            else {
+
+                let itemActual = productoActual.imagenes[colorActual];
+                let imagenSeleccionada = (typeof itemActual === 'object') ? itemActual.imagen : itemActual;
+                let precioFinal = (typeof itemActual === 'object') ? itemActual.precio : productoActual.precio;
+
+
+                carrito.push({
+
+                    nombre:
+                        productoActual.nombre,
+
+                    precio:
+                        precioFinal,
+
+                    color:
+                        colorActual,
+
+                    imagen:
+                        imagenSeleccionada,
+
+                    cantidad: cantidadSeleccionada
+
+                });
+
+            }
+
+
+            actualizarCarrito();
+
+            cerrarProducto();
+
+            abrirCarrito();
+
+        }
+
+
+        /* =========================================
+           AGREGAR AL CARRITO CON CANTIDAD (DESDE TARJETA)
+        ========================================= */
+
+        function agregarConCantidad(nombre, color, inputId, opciones) {
+            let inputCantidad = document.getElementById(inputId);
+            let cantidadSeleccionada = parseInt(inputCantidad.value) || 1;
+
+            let itemSeleccionado = opciones[color] || Object.values(opciones)[0];
+            let imagenFinal = (typeof itemSeleccionado === 'object') ? itemSeleccionado.imagen : itemSeleccionado;
+            let precioFinal = (typeof itemSeleccionado === 'object') ? itemSeleccionado.precio : 35000;
+
+            let productoExistente = carrito.find(function(item) {
+                return item.nombre === nombre && item.color === color;
+            });
+
+            if (productoExistente) {
+                productoExistente.cantidad += cantidadSeleccionada;
+            } else {
+                carrito.push({
+                    nombre: nombre,
+                    precio: precioFinal,
+                    color: color,
+                    imagen: imagenFinal,
+                    cantidad: cantidadSeleccionada
+                });
+            }
+
+            actualizarCarrito();
+            abrirCarrito();
+        }
+
+
+        /* =========================================
+           ACTUALIZAR CARRITO
+        ========================================= */
+
+        function actualizarCarrito() {
+
+            let contenedor =
+                document.getElementById(
+                    "carritoProductos"
+                );
+
+
+            contenedor.innerHTML = "";
+
+
+            let cantidadTotal = 0;
+
+            let subtotal = 0;
+
+
+            if (carrito.length === 0) {
+
+                contenedor.innerHTML = `
+
+                    <div class="carrito-vacio">
+
+                        <div class="icono-carrito-vacio">
+                            🛒
+                        </div>
+
+                        <h3>
+                            Tu carrito está vacío
+                        </h3>
+
+                        <p>
+                            Agrega algunos productos
+                            para comenzar.
+                        </p>
+
+                    </div>
+
+                `;
+
+            }
+
+
+            carrito.forEach(function(
+                producto,
+                indice
+            ) {
+
+                cantidadTotal +=
+                    producto.cantidad;
+
+
+                subtotal +=
+                    producto.precio *
+                    producto.cantidad;
+
+
+                let item =
+                    document.createElement(
+                        "div"
+                    );
+
+
+                item.className =
+                    "carrito-item";
+
+
+                item.innerHTML = `
+
+                    <img
+                        src="${producto.imagen}"
+                        alt="${producto.nombre}"
+                    >
+
+                    <div class="carrito-item-info">
+
+                        <h3>
+                            ${producto.nombre}
+                        </h3>
+
+                        <span class="carrito-color">
+                            Opción: ${producto.color}
+                        </span>
+
+                        <strong class="carrito-item-precio">
+                            ${formatearPrecio(
+                                producto.precio
+                            )}
+                        </strong>
+
+                        <div class="cantidad-control">
+
+                            <button
+                                onclick="cambiarCantidad(
+                                    ${indice},
+                                    -1
+                                )"
+                            >
+                                −
+                            </button>
+
+                            <span>
+                                ${producto.cantidad}
+                            </span>
+
+                            <button
+                                onclick="cambiarCantidad(
+                                    ${indice},
+                                    1
+                                )"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="eliminar-item"
+                        onclick="eliminarProducto(
+                            ${indice}
+                        )"
+                        title="Eliminar producto"
+                    >
+                        🗑
+                    </button>
+
+                `;
+
+
+                contenedor.appendChild(
+                    item
+                );
+
+            });
+
+
+            let envio = 0;
+
+            let total =
+                subtotal + envio;
+
+
+            document
+                .getElementById(
+                    "contadorCarrito"
+                )
+                .textContent =
+                cantidadTotal;
+
+
+            document
+                .getElementById(
+                    "cantidadCarritoTexto"
+                )
+                .textContent =
+                cantidadTotal === 1
+                    ? "1 producto"
+                    : cantidadTotal +
+                      " productos";
+
+
+            document
+                .getElementById(
+                    "subtotalCarrito"
+                )
+                .textContent =
+                formatearPrecio(
+                    subtotal
+                );
+
+
+            document
+                .getElementById(
+                    "envioCarrito"
+                )
+                .textContent =
+                envio === 0
+                    ? "GRATIS"
+                    : formatearPrecio(
+                        envio
+                    );
+
+
+            document
+                .getElementById(
+                    "totalCarrito"
+                )
+                .textContent =
+                formatearPrecio(
+                    total
+                );
+
+        }
+
+
+        /* =========================================
+           CAMBIAR CANTIDAD
+        ========================================= */
+
+        function cambiarCantidad(
+            indice,
+            cambio
+        ) {
+
+            carrito[indice].cantidad +=
+                cambio;
+
+
+            if (
+                carrito[indice].cantidad <= 0
+            ) {
+
+                carrito.splice(
+                    indice,
+                    1
+                );
+
+            }
+
+
+            actualizarCarrito();
+
+        }
+
+
+        /* =========================================
+           ELIMINAR PRODUCTO
+        ========================================= */
+
+        function eliminarProducto(
+            indice
+        ) {
+
+            carrito.splice(
+                indice,
+                1
+            );
+
+
+            actualizarCarrito();
+
+        }
+
+
+        /* =========================================
+           VACIAR CARRITO
+        ========================================= */
+
+        function vaciarCarrito() {
+
+            if (
+                carrito.length === 0
+            ) {
+
+                return;
+
+            }
+
+
+            let confirmar =
+                confirm(
+                    "¿Seguro que quieres vaciar tu carrito?"
+                );
+
+
+            if (confirmar) {
+
+                carrito = [];
+
+                actualizarCarrito();
+
+            }
+
+        }
+
+
+        /* =========================================
+           ABRIR CARRITO
+        ========================================= */
+
+        function abrirCarrito() {
+
+            actualizarCarrito();
+
+
+            document
+                .getElementById(
+                    "carritoPanel"
+                )
+                .classList.add(
+                    "carrito-abierto"
+                );
+
+
+            document
+                .getElementById(
+                    "carritoOverlay"
+                )
+                .classList.add(
+                    "overlay-activo"
+                );
+
+        }
+
+
+        /* =========================================
+           CERRAR CARRITO
+        ========================================= */
+
+        function cerrarCarrito() {
+
+            document
+                .getElementById(
+                    "carritoPanel"
+                )
+                .classList.remove(
+                    "carrito-abierto"
+                );
+
+
+            document
+                .getElementById(
+                    "carritoOverlay"
+                )
+                .classList.remove(
+                    "overlay-activo"
+                );
+
+        }
+
+
+        /* =========================================
+           CERRAR PRODUCTO
+        ========================================= */
+
+        function cerrarProducto() {
+
+            document
+                .getElementById(
+                    "modalProducto"
+                )
+                .classList.remove(
+                    "activo"
+                );
+
+
+            document.body.style.overflow =
+                "auto";
+
+        }
+
+
+        /* =========================================
+           FORMATO DE PRECIO
+        ========================================= */
+
+        function formatearPrecio(
+            precio
+        ) {
+
+            return "$" +
+                precio
+                    .toLocaleString(
+                        "es-CO"
+                    );
+
+        }
+
+
+        /* =========================================
+           FINALIZAR COMPRA
+        ========================================= */
+
+        function finalizarCompra() {
+
+            if (carrito.length === 0) {
+
+                alert("Tu carrito está vacío.");
+
+                return;
+
+            }
+
+            let mensaje = "NUEVO PEDIDO EXCLUSIVO - DRAGON GOLDEN STORE\n\n";
+            mensaje += "Hola Nicolas, quiero realizar el pedido de los siguientes accesorios:\n\n";
+
+            let subtotal = 0;
+
+            carrito.forEach(function(producto) {
+                subtotal += producto.precio * producto.cantidad;
+                mensaje += "- " + producto.nombre + " (Opción: " + producto.color + ") x" + producto.cantidad + " - " + formatearPrecio(producto.precio * producto.cantidad) + "\n";
+            });
+
+            mensaje += "\nTotal a pagar: " + formatearPrecio(subtotal) + "\n\n";
+            mensaje += "Quedo atento para coordinar el pago y el envio seguro. Muchas gracias.";
+
+            let numeroNicolas = "573175987676";
+            let urlWhatsApp = "https://wa.me/" + numeroNicolas + "?text=" + encodeURIComponent(mensaje);
+
+            window.open(urlWhatsApp, "_blank");
+        }
+
+
+        /* =========================================
+           RESALTAR RED SOCIAL DESDE EL FOOTER
+        ========================================= */
+
+        function resaltarRed(red) {
+            let card = document.getElementById("card-" + red);
+            if (card) {
+                card.classList.add("resaltado-activo");
+                setTimeout(function() {
+                    card.classList.remove("resaltado-activo");
+                }, 2500);
+            }
+        }
+
+
+        /* =========================================
+           CERRAR CON ESC
+        ========================================= */
+
+        document.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (
+                    event.key === "Escape"
+                ) {
+
+                    cerrarProducto();
+
+                    cerrarCarrito();
+
+                }
+
+            }
+        );
+
+
+        /* =========================================
+           INICIAR CARRITO
+        ========================================= */
+
+        actualizarCarrito();
+
+    </script>
+
+
+</body>
+
+</html>
